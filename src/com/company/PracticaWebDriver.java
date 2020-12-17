@@ -17,8 +17,8 @@ public class PracticaWebDriver {
         driver.get(urlBase);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.findElement(By.xpath("//a[@href='/sign_in']")).click();
-        //driver.findElement(By.id("user_email")).sendKeys("letskodeit@gmail.com");
+        driver.findElement(By.xpath("//a[@href='/sign_in']")).click();
+        driver.findElement(By.id("user_email")).sendKeys("letskodeit@gmail.com");
         driver.findElement(By.partialLinkText("Pract")).click();
         driver.findElement(By.name("enter-name")).sendKeys("Juan Pablo");
         Thread.sleep(3000);
