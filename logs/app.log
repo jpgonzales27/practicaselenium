@@ -1,0 +1,3 @@
+18:32:04.919 DEBUG LogsConsole -Debug Message Logged
+18:32:04.922 ERROR LogsConsole -Error Message Logged
+18:32:04.922 FATAL LogsConsole -Fatal Message Logged
