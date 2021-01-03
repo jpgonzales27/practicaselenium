@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression TestSuite">
+    <test name="Application Test">
+        <groups>
+            <define name="all">
+                <include name="autos"></include>
+                <include name="motos"></include>
+                <include name="bicis"></include>
+            </define>
+            <define name="noautos">
+                <include name="motos"></include>
+                <include name="bicis"></include>
+            </define>
+            <define name="soloautos">
+                <include name="autos"></include>
+            </define>
+            <run>
+                <include name="noautos"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testNgPractica.test.TestGroups"></class>
+        </classes>
+    </test>
+</suite>
