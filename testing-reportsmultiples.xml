@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Extent TestSuite">
+    <test name="Chrome Test">
+        <classes>
+            <class name="testNgPractica.reports.Test1"></class>
+            <class name="testNgPractica.reports.Test2"></class>
+        </classes>
+    </test>
+</suite>
